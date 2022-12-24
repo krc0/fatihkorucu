@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fatih Korucu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <style>
+            
+/* ? main START */
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html{
+
+    font-size: 62.5%;
+}
+
+
+body{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background: #f1f1f1;
+    overflow-x: hidden;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* ! main END */
+
+/* ? header START */
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    
+}
+
+.logo{
+    font-size: 2.3rem;
+    color: #8e00b9;
+    font-weight: bolder;
+    margin-left: 1rem;
+}
+
+
+.ana-sayfa-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.ana-sayfa-contact1{
+    background: url(images/bacgkround.jpg) no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.header-ul{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    gap: 7rem;
+    right: 5rem;
+}
+
+
+
+.header-ul a{
+    font-size: 1.5rem;
+    color: rgb(197, 72, 255);
+    transition: .7s ease all;
+    display: flex;
+    gap: 7rem;
+    font-weight: bold;
+    
+}
+
+.header-ul a::selection{
+    background: #d50ff0;
+    color: white;
+}
+
+.header-ul li{
+    margin: 0rem;
+}
+
+
+.header-ul a:hover{
+    border-bottom: solid .1rem rgb(197, 72, 255);
+    width:max-content;
+    border-radius: 1rem;
+    padding: 0 1.5rem;
+    background: black;
+    box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.12), 0 22.3px 17.9px rgba(0, 0, 0, 0.08), 0 100px 80px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
+    color: #fff;
+    transform: scale(1.2);
+}
+
+/* ! header END */
+
+
+
+
+
+/* ? anasayfa contact2 START */
+
+.social-media-con{   /*é*/
+    margin-top: 6rem;
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: 5rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 40% 40%;
+    grid-gap: 10%;
+    justify-content: center;
+}
+
+
+.social-media-con-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/* ? social-media-con START */
+.social-media-box{
+    background: rgba(255, 255, 255, 0.87);
+    width: 40rem;
+    height: 40rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: 1s ease all;
+
+    animation: s-media-box-animation 1s infinite;
+}
+
+@keyframes s-media-box-animation {
+    0%{box-shadow:0 0 .5rem white;}
+    100%{box-shadow:0 0 .5rem #adacac;}
+}
+
+.social-media-box:hover{
+    background: rgba(255, 255, 255, 0.596);
+    box-shadow: 0 .2rem .5rem gray;
+}
+
+.social-media-box-text{ 
+    font-size: 2.5rem;
+    position: absolute;
+    top: 19rem;
+    color: #555555;
+}
+
+.social-media-box-text::selection{
+    background: #880499;
+    color: white;
+}
+
+.social-media-box-btn-con{
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-box-btn{
+    width: 40%;
+    height: 4rem;
+    position: absolute; 
+    bottom: 0;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: bold;
+    transition: 1s ease all;
+}
+
+
+#instagram-btn{
+    background: #d50ff0;
+    color: whitesmoke;
+}
+
+#instagram-btn::selection{
+    background: #b906d1;
+    color: white;
+}
+
+#instagram-btn:hover{
+    background: #880499;
+    color: #ffffffab;
+}
+
+#youtube-btn{
+    background: red;
+    color: whitesmoke;
+}
+
+#youtube-btn:hover{
+    background: #aa0000;
+    color: #ffffffab;
+}
+
+#youtube-btn::selection{
+    background: rgb(252, 50, 50);
+    color: white;
+}
+
+.instagram-ico{
+    font-size: 14rem;
+    margin-top: 2rem;
+    color: #d50ff0;
+}
+
+.youtube-ico{
+    font-size: 14rem;
+    margin-top: 2rem;
+    color: #ff0000;
+}
+
+/* ? social-media-con END */
+
+/* ! anasayfa contact2 END */
+
+
+
+/* ? hakkımızda container START */
+
+.hakkimizda-con{
+    width: 100%;
+    height: 150vh;
+    background: #02002E;
+    position: relative;
+}
+
+.hakkimizda-contact{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.hakkimizda-box{
+    background: #55066d1e;
+    border: solid .2rem #8e00b9;
+    width: 80%;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    animation: hakkimizda-box-animation 1s infinite;
+}
+
+@keyframes hakkimizda-box-animation {
+    0%{box-shadow: 0 0 .7rem #b906d1;}
+}
+
+.hakkimizda-title{
+    font-size: 3rem;
+    color: #8e00b9;
+
+    animation: hakkimizda-title-animation 1s infinite;
+}
+
+@keyframes hakkimizda-title-animation {
+    0%{text-shadow: 0 0 .7rem #b906d159;}
+}
+
+.hakkimizda-text-box{
+    background: #55066d1e;
+    border: solid .2rem #8e00b9;
+    width: 80%;
+    height: 45rem;
+    margin-top: 60rem;
+    display: flex;
+    position: absolute;
+
+    animation: hakkimizda-text-box-animation 1s infinite;
+}
+
+@keyframes hakkimizda-text-box-animation {
+    0%{box-shadow: 0 0 .7rem #b906d1;}
+}
+
+.hakkimizda-text{
+    color: #8e00b9;
+    font-size: 1.5rem;
+    margin: 2rem;
+
+    animation: hakkimizda-text-animation 1s infinite;
+}
+
+
+@keyframes hakkimizda-text-animation {
+    0%{text-shadow: 0 0 .7rem #b906d160;}
+}
+
+.soz-con{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 3rem;
+}
+
+.soz-title{
+    color: #8e7aff;
+    opacity: 40%;
+
+    animation: soz-animation 1s  infinite;
+}
+
+@keyframes soz-animation {
+    0%{opacity: 45%;}
+    50%{opacity: 65;}
+    75%{opacity: 75%;}
+    100%{opacity: 100%;}
+}
+
+.soz-author{
+    font-size: 2rem;
+    float: right;
+    color: #8e7aff;
+    opacity: 20%;
+
+    animation: soz-author 1s  infinite;
+}
+
+
+/* ! hakkımızda container END */
+
+
+
+/* ? uygulamalar-container START */
+
+.uygulamalar-container{
+    width: 100%;
+    height: 325vh;
+    background: #82AAE3;
+    position: relative;
+}
+
+
+.uygulamalar-title-wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.uygulamalar-title{
+    font-size: 5rem;
+    color: #d3e3fa;
+    font-weight: bold;
+    position: absolute;
+    top: 7rem;
+    text-shadow: .1rem 0 .2rem .5rem black;
+}
+
+.uygulamalar-hr{
+    width: 20%;
+    position: absolute;
+    top: 15rem;
+    opacity: 60%;
+    animation: ease all;
+
+    
+}
+
+.uygulamalar-text{
+    font-size: 1.5rem;
+    color: #d3e3fac4;
+    font-weight: bold;
+    position: absolute;
+    top: 17rem;
+    text-shadow: .1rem 0 .2rem .5rem black;
+}
+
+
+
+
+
+.apps-con{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 60rem;
+
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: repeat(30%, 39);
+    grid-row-gap: 5rem;
+    grid-column-gap: 10rem;
+
+    justify-content: center;
+}
+
+
+.app-box{
+    background: #11031d;
+    height: 6rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.fa-circle-down{
+    color: #ffffff;
+    opacity: 80%;
+    font-size: 2rem;
+    position: absolute;
+    right: 2%;
+}
+
+.i-a{
+    width: auto;
+    height: 2rem;
+    transition: 1s ease all;
+}
+
+.i-a:hover{
+    opacity: 55%;
+    color: #b6b2ff;
+}
+
+.app-image-wrapper{
+    position: absolute;
+    border-radius:.5rem;
+    background: #11031d;
+    width: 7rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .2rem;
+}
+
+.app-image-wrapper img{
+    width: 100%;
+    height: 6rem;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.app-title{
+    color: #ffffffcb;
+    font-size: 2rem;
+    position: absolute;
+    left: 9rem;
+}
+
+
+.app-text{
+    color: #918bf3;
+    width: 45%;
+    position: absolute;
+    left: 22rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* ! uygulamalar-container END */
+
+#sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0 0 1rem white;
+  }
+  
+  #sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #525252;
+    display: block;
+    transition: .5s ease all;
+  }
+  
+  #sidebar a:hover {
+    opacity: 60%;
+    transform: scale(1.1);
+  }
+  
+  #sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    #sidebar {padding-top: 15px;}
+    #sidebar a {font-size: 18px;}
+  }
+  
+
+/* ? footer START */
+
+.footer-svg{
+    position: absolute;
+    bottom: 0;
+}
+
+footer{
+    position: absolute;
+    bottom: 5rem;
+    width: 100%;
+    height: 5rem;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    position: absolute;
+    color: #ffffffa9;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+/* ! footer END */
+
+#btn-on{
+    display: none;
+}
+
+
+
+/* ? responsive TABLET START*/
+
+@media screen and (max-width: 991px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+    .soz-title{
+        font-size: 2.5rem;
+    }
+
+    .soz-author{
+        font-size: 1.5rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 38% 38%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 437vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 30rem;
+    }
+
+    
+
+    footer{
+        position: absolute;
+        bottom: 2rem;
+        width: 100%;
+        height: 5rem;
+        z-index: 3;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-text{
+        position: absolute;
+        color: #ffffffa9;
+        font-size: 2.7rem;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .header-ul{
+        display: none;
+    }
+
+    #btn-on{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #880499;
+        cursor: pointer;
+        transition: 1s ease all;
+        display: flex;
+    }
+
+    #btn-on:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    #btn-of{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #161616;
+        display: none;
+        top: 1rem;
+        cursor: pointer;
+        transition: 1s ease all;
+    }
+
+    #btn-of:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    
+    
+}
+
+/* ! responsive TABLET END */
+
+
+
+
+
+
+
+/* ? resposive PHONE START */
+
+@media screen and (max-width:767px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .uygulamalar-hr{
+        width: 30%;
+    }
+
+    .soz-title{
+        font-size: 2rem;
+    }
+
+    .soz-author{
+        font-size: 1.1rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 76%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 673vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 30rem;
+    }
+
+    .social-media-box-text{ 
+        font-size: 2rem;
+    }
+
+    .instagram-ico, .youtube-ico{
+        font-size: 12rem;
+    }
+
+    .social-media-con{ 
+
+        grid-gap: 5%;
+
+    }
+
+    
+
+    footer{
+        position: absolute;
+        bottom: .8rem;
+        width: 100%;
+        height: 5rem;
+        z-index: 3;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-text{
+        position: absolute;
+        color: #ffffffa9;
+        font-size: 2.2rem;
+        font-weight: bold;
+    }
+
+    .logo{
+        font-size: 2.2rem;
+    }
+
+    .header-ul{
+        display: none;
+    }
+
+    #btn-on{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #880499;
+        cursor: pointer;
+        transition: 1s ease all;
+        display: flex;
+    }
+
+    #btn-on:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    #btn-of{
+        outline: none;
+        border: none;
+        background: transparent;
+        position: absolute;
+        right: 3rem;
+        font-size: 2.5rem;
+        color: #161616;
+        display: none;
+        top: 1rem;
+        cursor: pointer;
+        transition: 1s ease all;
+    }
+
+    #btn-of:hover{
+        transform: scale(.8);
+        opacity: 60%;
+    }
+
+    .social-media-box-btn{
+        font-size: 1.5rem;
+    }
+    
+
+    
+    
+}
+
+/* ! responsive PHONE END */
+
+
+
+
+
+
+
+/* ? resposive PHONE2 START */
+
+
+@media screen and (max-width:550px) {
+    .social-media-con{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ana-sayfa-contact1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .uygulamalar-hr{
+        width: 50%;
+    }
+
+    .soz-title{
+        font-size: 1.5rem;
+    }
+
+    .soz-author{
+        font-size: 1.1rem;
+    }
+
+    .apps-con{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 60rem;
+    
+        display: grid;
+        grid-template-columns: 76%;
+        grid-template-rows: repeat(30%, 39);
+        grid-row-gap: 5rem;
+        grid-column-gap: 9.5rem;
+    
+        justify-content: center;
+    }
+
+    .uygulamalar-container{
+        width: 100%;
+        height: 673vh;
+        background: #82AAE3;
+        position: relative;
+    }
+
+    .social-media-box{
+        margin: 1rem;
+        height: 25rem;
+        width: 45%;
+    }
+
+    .social-media-box-text{ /*""*/
+        font-size: 1.5rem;
+        top: 4rem;
+    }
+
+    .instagram-ico, .youtube-ico{
+        font-size: 11rem;
+        position: relative;
+        margin: 6rem;
+    }
+
+    .social-media-con{ 
+
+        grid-gap: 3%;
+
+    }
+
+
+    
+
+    footer{
+        position: absolute;
+        bottom: 0rem;
+   
+
+    }
+}
+/* ! resposive PHONE2 END */
+
+@media screen and (max-width:455px) {
+    .soz-title{
+        font-size: 1.4rem;
+    }
+}
+
+.error{
+    display: none;
+    top: 0;
+    position: fixed;
+    z-index: 99999;
+    background: white;
+    color: blue;
+    font-size: 3rem;
+    width: 100%;
+    height: 100vh;
+}
+
+
+@media screen and (max-width:400px) {
+    .error{
+        display: block;
+    }
+}
+        </style>
+
+
+</head>
+
+<body>
+    <div class="error">Cihazınız web sitesini açmak için UYGUN DEĞİL!</div>
+        <!-- ? ana-sayfa-container START-->
+    <!-- ? header START-->
+    <div id="ANA SAYFA" class="ana-sayfa-container">
+        <div class="ana-sayfa-contact1">
+            <header class="header">
+                <div class="logo">FATİH KORUCU</div>
+                <ul class="header-ul">
+                    <li><a href="#ANA SAYFA">ANA SAYFA</a></li>
+                    <li><a href="#HAKKIMDA">HAKKIMDA</a></li>
+                    <li><a href="#uygulamalar-hd">UYGULAMALAR</a></li>
+                </ul>
+                <button id="btn-on" onclick="openNav()"><i class="fa-sharp fa-solid fa-bars-staggered"></i></button>
+
+                <div id="sidebar">
+                    <button id="btn-of" onclick="closeNav()"><i class="fa-solid fa-xmark"></i></button>
+                    <a href="#ANA SAYFA">Ana Sayfa</a>
+                    <a href="#HAKKIMDA">Hakkımda</a>
+                    <a href="#uygulamalar-hd">Uygulamalar</a>
+                  </div>
+
+            </header>
+            <!-- ? contact2 START -->
+            <div class="social-media-con-wrapper">
+                <div class="social-media-con">
+                    <div class="social-media-box">
+                        <div class="social-media-box-ico-container"><i class="fa-brands fa-instagram instagram-ico"></i>
+                        </div>
+                        <div class="social-media-box-text">@the_fatih_krc_42</div>
+                        <div class="social-media-box-btn-con">
+                            <a href="https://www.instagram.com/the_fatih_krc_42" id="instagram-btn"
+                                class="social-media-box-btn">TAKİP ET</a>
+                        </div>
+                    </div>
+
+                    <div class="social-media-box">
+                        <div class="social-media-box-ico-container"><i class="fa-brands fa-youtube youtube-ico"></i>
+                        </div>
+                        <div class="social-media-box-text">Ecdadımızın Yolundan</div>
+                        <div class="social-media-box-btn-con">
+                            <a href="https://www.youtube.com/channel/UCnPFOVcerZ_fcCkHCniADAA" id="youtube-btn"
+                                class="social-media-box-btn">Abone Ol</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ! contact2 END -->
+        </div>
+
+        <!-- ? contact2 START-->
+
+        <div class="contact2"></div>
+
+        <!-- ! contact2 END-->
+
+    </div>
+    <!-- !ana-sayfa-container END-->
+
+
+    <!-- ? hakkımızda START-->
+
+    <div id="HAKKIMDA" class="hakkimizda-con">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#02002E" fill-opacity="1"
+                d="M0,160L30,154.7C60,149,120,139,180,128C240,117,300,107,360,122.7C420,139,480,181,540,170.7C600,160,660,96,720,64C780,32,840,32,900,53.3C960,75,1020,117,1080,154.7C1140,192,1200,224,1260,224C1320,224,1380,192,1410,176L1440,160L1440,0L1410,0C1380,0,1320,0,1260,0C1200,0,1140,0,1080,0C1020,0,960,0,900,0C840,0,780,0,720,0C660,0,600,0,540,0C480,0,420,0,360,0C300,0,240,0,180,0C120,0,60,0,30,0L0,0Z">
+            </path>
+        </svg>
+        <div class="hakkimizda-contact">
+            <div class="hakkimizda-box">
+                <div class="hakkimizda-title">HAKKIMDA</div>
+                <div class="hakkimizda-text-box">
+                    <div class="hakkimizda-text">Seni hiç alakadar etmez...</div>
+                </div>
+                <div class="soz-con">
+                    <div class="soz-title">Devler gibi eserler bırakmak için, karıncalar gibi çalışmak gerekir.</div>
+                    <div class="soz-author">Necip Fazıl Kısakürek</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! hakkımıda END-->
+
+
+
+    <!-- ? uygulamalar START-->
+
+    <div class="uygulamalar-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#02002E" fill-opacity="1"
+                d="M0,128L20,144C40,160,80,192,120,192C160,192,200,160,240,165.3C280,171,320,213,360,213.3C400,213,440,171,480,170.7C520,171,560,213,600,213.3C640,213,680,171,720,144C760,117,800,107,840,128C880,149,920,203,960,229.3C1000,256,1040,256,1080,234.7C1120,213,1160,171,1200,160C1240,149,1280,171,1320,181.3C1360,192,1400,192,1420,192L1440,192L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z">
+            </path>
+        </svg>
+        <div class="uygulamalar-title-wrapper">
+            <div id="uygulamalar-hd"></div>
+            <div class="uygulamalar-title">UYGULAMALAR</div>
+            <hr class="uygulamalar-hr">
+            <div class="uygulamalar-text">Kendi kullandığım işinizi kolaylaştıracak uygulamalar</div>
+        </div>
+        <div class="apps-con">
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/chatGPT image.png" alt=""></div>
+                <div class="app-title">ChatGPT</div>
+                <a class="i-a" href="https://openai.com/blog/chatgpt/"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/logo_spacedesk.jpg" alt=""></div>
+                <div class="app-title">space desk</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=ph.spacedesk.beta&hl=en_US&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/word lanes.png" alt=""></div>
+                <div class="app-title">Word Lanes</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.fanatee.noodles&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/wonder.jpg" alt=""></div>
+                <div class="app-title">Wonder</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.codeway.wonder&hl=es_PA&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/ARuler.png" alt=""></div>
+                <div class="app-title">ARuler</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.grymala.aruler&hl=es_PA&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/luckypatcher.jpg" alt=""></div>
+                <div class="app-title">Lucky Patcher</div>
+                <div class="app-text"></div>
+                <a href="https://m.apkpure.com/tr/lucky-patcher-iillii/com.android.vending.billing.InAppBillingService.CRAC"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/Cap Cut.png" alt=""></div>
+                <div class="app-title">Cap Cut</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/ps touch plus.png" alt=""></div>
+                <div class="app-title">Ps Touch Plus</div>
+                <div class="app-text"></div>
+                <a href="" class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/pixelab.jpg" alt=""></div>
+                <div class="app-title">Pixellab</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.imaginstudio.imagetools.pixellab&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/backgrounderaser.png" alt=""></div>
+                <div class="app-title">Background Eraser</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.handycloset.android.eraser&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/picsart.png" alt=""></div>
+                <div class="app-title">Picsart</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.picsart.studio&hl=es_PA&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/remini-logo.png" alt=""></div>
+                <div class="app-title">Remini</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.bigwinepot.nwdn.international&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/trebedit.png" alt=""></div>
+                <div class="app-title">Treb Edit</div>
+                <a href="https://play.google.com/store/apps/details?id=com.teejay.trebedit&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/dnsdegistirici.png" alt=""></div>
+                <div class="app-title">DNS değiştirici</div>
+                <a href="https://play.google.com/store/apps/details?id=com.burakgon.dnschanger&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/autoclicker.png" alt=""></div>
+                <div class="app-title">Auto Clicker</div>
+                <a href="https://play.google.com/store/apps/details?id=com.truedevelopersstudio.automatictap.autoclicker&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/whatsap aero.png" alt=""></div>
+                <div class="app-title">Whatsapp AERO</div>
+                <a href="https://whatsaero.com/download-wpaero/1/?lang=tr" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/instagramAERO.png" alt=""></div>
+                <div class="app-title">İnstagram AERO</div>
+                <a href="https://aeroinsta.com/download-insta-aero/?lang=tr" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/reaksiyoneğitimi.png" alt=""></div>
+                <div class="app-title">Reaksiyon Eğitimi</div>
+                <a href="https://play.google.com/store/apps/details?id=com.nixgames.reaction&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/hackerkeyborads.png" alt=""></div>
+                <div class="app-title">Hacker's Keyborad</div>
+                <a href="https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/fonts.png" alt=""></div>
+                <div class="app-title">Fonts</div>
+                <a href="https://play.google.com/store/apps/details?id=com.fontskeyboard.fonts&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/yazitipiklavyesi.png" alt=""></div>
+                <div class="app-title">Yazı Tipi Klavyesi</div>
+                <a href="https://play.google.com/store/apps/details?id=com.fonts.emoji.fontkeyboard.free&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/Termux.png" alt=""></div>
+                <div class="app-title">Termux</div>
+                <div class="app-text"></div>
+                <a href="https://play.google.com/store/apps/details?id=com.termux&hl=es_PA&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/airdroid.png" alt=""></div>
+                <div class="app-title">Airdroid</div>
+                <a href="https://play.google.com/store/apps/details?id=com.sand.airdroid&hl=es_PA&gl=US" class="i-a"><i
+                        class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/wallcraft.png" alt=""></div>
+                <div class="app-title">Wallcraft</div>
+                <a href="https://play.google.com/store/apps/details?id=com.superspacex.wallpaper&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/ekraniaciktut.png" alt=""></div>
+                <div class="app-title">Ekranı Açık Tut</div>
+                <a href="https://play.google.com/store/apps/details?id=com.eonsoft.ScreenON&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/getcontact.png" alt=""></div>
+                <div class="app-title">getcontact</div>
+                <a href="https://play.google.com/store/apps/details?id=app.source.getcontact&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+
+            <div class="app-box">
+                <div class="app-image-wrapper"><img class="app-image" src="images/soruisareti.png" alt=""></div>
+                <div class="app-title">Codec</div>
+                <a href="https://play.google.com/store/apps/details?id=duy.com.text_converter&hl=es_PA&gl=US"
+                    class="i-a"><i class="fa-sharp fa-solid fa-circle-down"></i></a>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="footer-text">Tüm Hakları Saklıdır &copy; 2022</div>
+        </footer>
+        <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#02002E" fill-opacity="1"
+                d="M0,64L24,64C48,64,96,64,144,74.7C192,85,240,107,288,101.3C336,96,384,64,432,53.3C480,43,528,53,576,48C624,43,672,21,720,26.7C768,32,816,64,864,80C912,96,960,96,1008,112C1056,128,1104,160,1152,176C1200,192,1248,192,1296,176C1344,160,1392,128,1416,112L1440,96L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z">
+            </path>
+        </svg>
+
+
+
+        <!-- ! uygulamalar END-->
+
+        <!-- ? script START-->
+
+        <script>var s=0;
+            window.addEventListener('scroll', function() {
+                var header = document.querySelector('.header');
+                s++;
+                if (window.scrollY < 40 && s==0) {
+                    header.style.background = "background: rgba(127, 14, 172, 0.342)";
+                }
+                 
+                if (window.scrollY > 40 && s==7){
+                    header.style.background="white";
+                    header.style.boxShadow="0 .3rem .7rem white";
+                } 
+            
+            });
+            
+            
+            
+            function openNav() {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("btn-on").style.display="none";
+                document.getElementById("btn-of").style.display="flex";
+              }
+              
+              function closeNav() {
+                document.getElementById("sidebar").style.width = "0";
+                document.getElementById("btn-on").style.display="flex";
+                document.getElementById("btn-of").style.display="none";
+              }
+              </script>
+
+        <!-- ! script END-->
+    </div>
+    
+
+</body>
+
+</html>
